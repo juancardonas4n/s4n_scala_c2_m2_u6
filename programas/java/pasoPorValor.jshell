@@ -1,0 +1,11 @@
+
+int valor = 20;
+
+int f(int a) {
+   return a + 1;
+}
+
+int g(int b) {
+   b = b + 1;
+   return b;
+}
