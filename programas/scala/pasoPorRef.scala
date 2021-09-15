@@ -1,16 +1,13 @@
-class PasoPorRef1(var a:Int)
+class PasoRefMt(var a:Int)
 
-class PasoPorRef2(val b:Int)
+class PasoRefIm(val b:Int)
 
-def mPpr1(ppr1:PasoPorRef1, nuevo:Int):Int = {
-  ppr1.a = ppr1.a + nuevo
-  ppr1.a
+def mMt(prmt:PasoRefMt, nuevo:Int):Int = {
+  prmt.a = prmt.a + nuevo
+  prmt.a
 }
 
-def mPpr2(ppr2:PasoPorRef2, nuevo:Int):Int = { 
-  ppr2.b = ppr2.b + nuevo
-  ppr2.b
-}
+def mIm(prim:PasoRefIm, nuevo:Int):Int = prim.b + nuevo
 
-var unPpr1 = new PasoPorRef1(10)
-val unPpr2 = new PasoPorRef2(20)
+var mt = new PasoRefMt(10)
+val im = new PasoRefIm(20)

@@ -1,4 +1,4 @@
-def comp(x: Int):Array[Int] = Array(x,x,x)
+def comp1(x: Int):Array[Int] = Array(x,x,x)
 
 def comp2(x: => Int):Array[Int] = Array(x,x,x)
 
