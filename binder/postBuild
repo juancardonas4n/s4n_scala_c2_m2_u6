@@ -6,14 +6,16 @@ set -e
 curl -Lo coursier https://git.io/coursier-cli
 chmod +x coursier
 
-SCALA_VERSION=2.12.11
-ALMOND_VERSION=0.10.9
+# SCALA_VERSION=2.12.11
+SCALA_VERSION=2.13.3
+# ALMOND_VERSION=0.10.9
+ALMOND_VERSION=0.10.6
 
-# Install almond for Scala 2.12
+# Install almond for Scala 2.13
 ./coursier launch --fork "almond:$ALMOND_VERSION" --scala $SCALA_VERSION -- \
   --install \
-  --id scala212 \
-  --display-name "Scala (2.12)" \
+  --id scala213 \
+  --display-name "Scala (2.13)" \
   --env "JAVA_OPTS=-XX:MaxRAMPercentage=80.0" \
   --variable-inspector \
   </dev/null 2>&1 | grep -v '^Download'
